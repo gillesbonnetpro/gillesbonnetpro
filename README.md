@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @gillesbonnetpro
-- 👀 I’m interested in `code`, obviously, and in playing music as well :guitar:
+- 👀 I’m interested in `code`, obviously, and in ==playing music== as well :guitar:
 - 🌱 I’m currently learning ExpressJS to create back APIs
 - 💞️ I’m looking to collaborate on every motivating project
 - 📫 How to reach me : gilles.bonnet.pro@gmail.com
