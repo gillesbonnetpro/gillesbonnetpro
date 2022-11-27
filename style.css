@@ -5,9 +5,8 @@ html {
 
 }
 
-.parallax {
+div[class^="parallax"] {
     background-image: url('./public/matrixlike.jpg');
-    height: 50%;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -16,19 +15,17 @@ html {
 
 /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
 @media only screen and (max-device-width: 1366px) {
-    .parallax {
+    div[class^="parallax"] {
         background-attachment: scroll;
     }
 }
 
+.main {
+    height: 50%;
+}
+
 .buffer {
     height: 30%;
-    background-image: url('./public/matrixlike.jpg');
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 div[class^="content"] {
