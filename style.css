@@ -1,16 +1,29 @@
 body,
 html {
     height: 100%;
-    padding: 0%, 0%;
+    margin: 0;
+
 }
 
 .parallax {
-    /* The image used */
     background-image: url('./public/matrixlike.jpg');
+    height: 50%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
 
-    /* Full height */
-    height: 100%;
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
 
+.buffer {
+    height: 30%;
+    background-image: url('./public/matrixlike.jpg');
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -21,5 +34,11 @@ html {
 .content1 {
     height: 100px;
     background-color: goldenrod;
+    font-size: 36px
+}
+
+.content2 {
+    height: 100px;
+    background-color: orange;
     font-size: 36px
 }
