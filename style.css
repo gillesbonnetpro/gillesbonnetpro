@@ -1,0 +1,30 @@
+header {
+    position: fixed;
+    background-color: aquamarine;
+}
+
+
+/* default navigation values */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    padding: 10px 0;
+}
+
+nav a {
+    flex: auto;
+    text-align: center;
+    background: #ccc;
+    color: black;
+    margin: 0 5px;
+    padding: 5px 0;
+    text-decoration: none;
+    align-self: center;
+}
+
+nav a:hover {
+    outline: 1px solid red;
+    color: red;
+    text-decoration: underline;
+}
