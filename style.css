@@ -31,14 +31,16 @@ html {
     background-size: cover;
 }
 
-.content1 {
+div[class^="content"] {
     height: 100px;
     background-color: goldenrod;
-    font-size: 36px
+    color: yellowgreen;
+    font-size: 36px;
+    opacity: 0.5;
+    transition: opacity 1s, color 0.5s;
 }
 
-.content2 {
-    height: 100px;
-    background-color: orange;
-    font-size: 36px
+div[class^="content"]:hover {
+    opacity: 1;
+    color: black;
 }
