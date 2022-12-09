@@ -7,7 +7,13 @@
 
 }
 
+@font-face {
+    font-family: 'assetregular';
+    src: url('./fonts/Asset-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
 
+}
 
 body,
 html {
@@ -21,51 +27,40 @@ header {
     position: fixed;
     display: block;
     width: 100%;
-    height: 300px;
     background-color: white;
     z-index: 1000;
+    min-height: fit-content;
 
 }
+
+
 
 #header-main {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-size: 300%;
-}
-
-
-#header-main div {
-    margin: 20px;
-}
-
-#header-main #logo {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-}
-
-
-
-#header-main #script {
     flex-direction: column;
-    flex-grow: 2;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'alluraregular';
-    font-size: 200%;
-    color: transparent;
+    color: blue;
 }
 
-#header-main #script div {
-    /*width: 100%;*/
+#header-main #name {
+    font-size: 10vw;
+    font-family: 'alluraregular';
+    white-space: nowrap;
+    animation: grow 2s 1;
+}
+
+#header-main div span {
+    position: relative;
+    display: inline-block;
+    font-family: 'assetregular';
+    font-size: 3vw;
+    color: blue;
+    text-transform: uppercase;
+    animation: flip 2s 1;
+    animation-delay: calc(.1s * var(--i))
 }
 
 /*
@@ -135,4 +130,26 @@ div[class^="content"] {
 div[class^="content"]:hover {
     opacity: 1;
     color: black;
+}
+
+
+/* animations*/
+
+@keyframes flip {
+
+    0%,
+    80% {
+        transform: rotateY(360deg)
+    }
+}
+
+@keyframes grow {
+
+    0% {
+        transform: scale(0)
+    }
+
+    80% {
+        transform: scale(1)
+    }
 }
