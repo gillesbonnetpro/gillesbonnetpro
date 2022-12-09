@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'alluraregular';
+    src: url('./fonts/allura/allura-regular-webfont.woff2') format('woff2'),
+        url('./fonts/allura/allura-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
 body,
 html {
     height: 100%;
@@ -49,6 +60,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'alluraregular';
 }
 
 #header-main #script div {
