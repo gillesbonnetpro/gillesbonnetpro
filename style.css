@@ -27,12 +27,9 @@ header {
     position: fixed;
     display: block;
     width: 100%;
-    background-color: white;
     z-index: 1000;
     min-height: fit-content;
-
 }
-
 
 
 #header-main {
@@ -42,14 +39,15 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: blue;
+    background-image: url('./public/sky.jpg');
+    color: antiquewhite;
 }
 
 #header-main #name {
     font-size: 10vw;
     font-family: 'alluraregular';
     white-space: nowrap;
-    animation: grow 2s 1;
+    /*animation: grow 2s 1;*/
 }
 
 #header-main div span {
@@ -57,7 +55,6 @@ header {
     display: inline-block;
     font-family: 'assetregular';
     font-size: 3vw;
-    color: blue;
     text-transform: uppercase;
     animation: flip 2s 1;
     animation-delay: calc(.1s * var(--i))
@@ -80,7 +77,6 @@ nav {
 }
 
 nav a {
-    line-height: 50px;
     text-decoration: none;
     color: green;
     background-color: white;
@@ -96,7 +92,7 @@ nav a:hover {
 /* parallax */
 
 div[class^="parallax"] {
-    background-image: url('./public/matrixlike.jpg');
+    background-image: url('./public/sky.jpg');
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
