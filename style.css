@@ -22,7 +22,7 @@ header {
     display: block;
     width: 100%;
     height: 300px;
-    background-color: red;
+    background-color: white;
     z-index: 1000;
 
 }
@@ -52,7 +52,6 @@ header {
 
 
 #header-main #script {
-    background-color: blue;
     flex-direction: column;
     flex-grow: 2;
     width: 100%;
@@ -61,6 +60,8 @@ header {
     justify-content: center;
     align-items: center;
     font-family: 'alluraregular';
+    font-size: 200%;
+    color: transparent;
 }
 
 #header-main #script div {
@@ -76,7 +77,6 @@ header span {
 
 /* menu */
 nav {
-
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
